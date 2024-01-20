@@ -53,6 +53,8 @@ You can customize the image's background layer and text appearance from your `_c
 
 jekyll-gensocial:     # These are the default settings
   enabled: true       # Disables the output
+  only_on_demand: false # true means it will only output an image if it has jekyll-gensocial: options configured. You could just use the "enabled" option. :) Otherwise we do them all. 
+  default_path: nil #used if there is not an existing image defined. images will get a name using the title and random guid.
   size:               # The size of the overall canvas
     width: 1920
     height: 1080
